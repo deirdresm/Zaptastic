@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		381E32DD2266C240003F03F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381E32DC2266C240003F03F6 /* AppDelegate.swift */; };
 		381E32DF2266C240003F03F6 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 381E32DE2266C240003F03F6 /* GameScene.sks */; };
-		381E32E12266C240003F03F6 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 381E32E02266C240003F03F6 /* Actions.sks */; };
 		381E32E32266C240003F03F6 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381E32E22266C240003F03F6 /* GameScene.swift */; };
 		381E32E52266C240003F03F6 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381E32E42266C240003F03F6 /* GameViewController.swift */; };
 		381E32E82266C240003F03F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 381E32E62266C240003F03F6 /* Main.storyboard */; };
@@ -17,6 +16,13 @@
 		381E32ED2266C242003F03F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 381E32EB2266C242003F03F6 /* LaunchScreen.storyboard */; };
 		381E32F82266C242003F03F6 /* ZaptasticTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381E32F72266C242003F03F6 /* ZaptasticTests.swift */; };
 		381E33032266C242003F03F6 /* ZaptasticUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381E33022266C242003F03F6 /* ZaptasticUITests.swift */; };
+		381E33112266C46A003F03F6 /* Starfield.sks in Resources */ = {isa = PBXBuildFile; fileRef = 381E33102266C46A003F03F6 /* Starfield.sks */; };
+		381E33142266D595003F03F6 /* enemy-types.json in Resources */ = {isa = PBXBuildFile; fileRef = 381E33122266D595003F03F6 /* enemy-types.json */; };
+		381E33152266D595003F03F6 /* waves.json in Resources */ = {isa = PBXBuildFile; fileRef = 381E33132266D595003F03F6 /* waves.json */; };
+		381E33172266D61B003F03F6 /* EnemyType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381E33162266D61B003F03F6 /* EnemyType.swift */; };
+		381E33192266FB2B003F03F6 /* Wave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381E33182266FB2B003F03F6 /* Wave.swift */; };
+		381E331B2266FC9B003F03F6 /* Bundle+Decoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381E331A2266FC9B003F03F6 /* Bundle+Decoding.swift */; };
+		381E331D2267006E003F03F6 /* EnemyNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381E331C2267006E003F03F6 /* EnemyNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +46,6 @@
 		381E32D92266C240003F03F6 /* Zaptastic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zaptastic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		381E32DC2266C240003F03F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		381E32DE2266C240003F03F6 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		381E32E02266C240003F03F6 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		381E32E22266C240003F03F6 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		381E32E42266C240003F03F6 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		381E32E72266C240003F03F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -53,6 +58,13 @@
 		381E32FE2266C242003F03F6 /* ZaptasticUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZaptasticUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		381E33022266C242003F03F6 /* ZaptasticUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZaptasticUITests.swift; sourceTree = "<group>"; };
 		381E33042266C242003F03F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		381E33102266C46A003F03F6 /* Starfield.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Starfield.sks; sourceTree = "<group>"; };
+		381E33122266D595003F03F6 /* enemy-types.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "enemy-types.json"; sourceTree = "<group>"; };
+		381E33132266D595003F03F6 /* waves.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = waves.json; sourceTree = "<group>"; };
+		381E33162266D61B003F03F6 /* EnemyType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnemyType.swift; sourceTree = "<group>"; };
+		381E33182266FB2B003F03F6 /* Wave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wave.swift; sourceTree = "<group>"; };
+		381E331A2266FC9B003F03F6 /* Bundle+Decoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Decoding.swift"; sourceTree = "<group>"; };
+		381E331C2267006E003F03F6 /* EnemyNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnemyNode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,13 +117,19 @@
 			children = (
 				381E32DC2266C240003F03F6 /* AppDelegate.swift */,
 				381E32DE2266C240003F03F6 /* GameScene.sks */,
-				381E32E02266C240003F03F6 /* Actions.sks */,
 				381E32E22266C240003F03F6 /* GameScene.swift */,
+				381E331C2267006E003F03F6 /* EnemyNode.swift */,
+				381E33162266D61B003F03F6 /* EnemyType.swift */,
+				381E33182266FB2B003F03F6 /* Wave.swift */,
+				381E331A2266FC9B003F03F6 /* Bundle+Decoding.swift */,
+				381E33102266C46A003F03F6 /* Starfield.sks */,
 				381E32E42266C240003F03F6 /* GameViewController.swift */,
 				381E32E62266C240003F03F6 /* Main.storyboard */,
 				381E32E92266C242003F03F6 /* Assets.xcassets */,
 				381E32EB2266C242003F03F6 /* LaunchScreen.storyboard */,
 				381E32EE2266C242003F03F6 /* Info.plist */,
+				381E33122266D595003F03F6 /* enemy-types.json */,
+				381E33132266D595003F03F6 /* waves.json */,
 			);
 			path = Zaptastic;
 			sourceTree = "<group>";
@@ -238,11 +256,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				381E33142266D595003F03F6 /* enemy-types.json in Resources */,
 				381E32E82266C240003F03F6 /* Main.storyboard in Resources */,
+				381E33152266D595003F03F6 /* waves.json in Resources */,
 				381E32DF2266C240003F03F6 /* GameScene.sks in Resources */,
+				381E33112266C46A003F03F6 /* Starfield.sks in Resources */,
 				381E32EA2266C242003F03F6 /* Assets.xcassets in Resources */,
 				381E32ED2266C242003F03F6 /* LaunchScreen.storyboard in Resources */,
-				381E32E12266C240003F03F6 /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +288,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				381E32E32266C240003F03F6 /* GameScene.swift in Sources */,
+				381E331D2267006E003F03F6 /* EnemyNode.swift in Sources */,
+				381E33192266FB2B003F03F6 /* Wave.swift in Sources */,
+				381E331B2266FC9B003F03F6 /* Bundle+Decoding.swift in Sources */,
 				381E32E52266C240003F03F6 /* GameViewController.swift in Sources */,
+				381E33172266D61B003F03F6 /* EnemyType.swift in Sources */,
 				381E32DD2266C240003F03F6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -454,7 +478,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = net.deirdre.Zaptastic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -472,7 +496,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = net.deirdre.Zaptastic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
