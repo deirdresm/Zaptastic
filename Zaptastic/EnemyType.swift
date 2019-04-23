@@ -12,5 +12,5 @@ struct EnemyType : Codable {
 	var name: String
 	var shields: Int
 	var speed: CGFloat
-	var powerupChance: Int
+	var powerUpChance: Int
 }

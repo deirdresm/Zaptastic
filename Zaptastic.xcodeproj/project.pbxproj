@@ -23,6 +23,7 @@
 		381E33192266FB2B003F03F6 /* Wave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381E33182266FB2B003F03F6 /* Wave.swift */; };
 		381E331B2266FC9B003F03F6 /* Bundle+Decoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381E331A2266FC9B003F03F6 /* Bundle+Decoding.swift */; };
 		381E331D2267006E003F03F6 /* EnemyNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381E331C2267006E003F03F6 /* EnemyNode.swift */; };
+		384FB285226FAE2D00EC4FDF /* Explosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = 384FB284226FAE2D00EC4FDF /* Explosion.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,8 @@
 		381E33182266FB2B003F03F6 /* Wave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wave.swift; sourceTree = "<group>"; };
 		381E331A2266FC9B003F03F6 /* Bundle+Decoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Decoding.swift"; sourceTree = "<group>"; };
 		381E331C2267006E003F03F6 /* EnemyNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnemyNode.swift; sourceTree = "<group>"; };
+		384FB283226FA68A00EC4FDF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		384FB284226FAE2D00EC4FDF /* Explosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Explosion.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +98,7 @@
 		381E32D02266C240003F03F6 = {
 			isa = PBXGroup;
 			children = (
+				384FB283226FA68A00EC4FDF /* README.md */,
 				381E32DB2266C240003F03F6 /* Zaptastic */,
 				381E32F62266C242003F03F6 /* ZaptasticTests */,
 				381E33012266C242003F03F6 /* ZaptasticUITests */,
@@ -118,6 +122,7 @@
 				381E32DC2266C240003F03F6 /* AppDelegate.swift */,
 				381E32DE2266C240003F03F6 /* GameScene.sks */,
 				381E32E22266C240003F03F6 /* GameScene.swift */,
+				384FB284226FAE2D00EC4FDF /* Explosion.sks */,
 				381E331C2267006E003F03F6 /* EnemyNode.swift */,
 				381E33162266D61B003F03F6 /* EnemyType.swift */,
 				381E33182266FB2B003F03F6 /* Wave.swift */,
@@ -261,6 +266,7 @@
 				381E33152266D595003F03F6 /* waves.json in Resources */,
 				381E32DF2266C240003F03F6 /* GameScene.sks in Resources */,
 				381E33112266C46A003F03F6 /* Starfield.sks in Resources */,
+				384FB285226FAE2D00EC4FDF /* Explosion.sks in Resources */,
 				381E32EA2266C242003F03F6 /* Assets.xcassets in Resources */,
 				381E32ED2266C242003F03F6 /* LaunchScreen.storyboard in Resources */,
 			);
