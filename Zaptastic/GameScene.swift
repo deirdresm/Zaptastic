@@ -6,6 +6,7 @@
 //  Copyright © 2019 Deirdre Saoirse Moen. All rights reserved.
 //
 
+import CoreMotion
 import SpriteKit
 
 enum CollisionType: UInt32 {
@@ -17,14 +18,17 @@ enum CollisionType: UInt32 {
 
 class GameScene: SKScene, SKPhysicsContactDelegate {
     
+    let motionManager = CMMotionManager()
+    
     let player = SKSpriteNode(imageNamed: "player")
+    var playerShields = 10
+
     var isPlayerAlive = true
     let waves = Bundle.main.decode([Wave].self, from: "waves.json")
     let enemyTypes = Bundle.main.decode([EnemyType].self, from: "enemy-types.json")
     var levelNumber = 0
     var waveNumber = 0
     let positions = Array(stride(from: -320, through: 320, by: 80))
-    var playerShields = 10
     
     override func didMove(to view: SKView) {
         physicsWorld.gravity = .zero
@@ -53,6 +57,16 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
     
     override func update(_ currentTime: TimeInterval) {
+        
+        if let accelerometerData = motionManager.accelerometerData {
+            player.position.y += CGFloat(accelerometerData.acceleration.x * 50)
+            
+            if player.position.y < frame.minY {
+                player.position.y = frame.minY
+            } else if player.position.y > frame.maxY {
+                player.position.y = frame.maxY
+            }
+        }
         
         for child in children {
             if child.frame.maxX < 0 {
@@ -145,6 +159,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             }
             
             playerShields -= 1
+            print(playerShields)
             
             if playerShields == 0 {
                 gameOver()
@@ -188,7 +203,6 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         }
 
         if let gameOver = SKEmitterNode(fileNamed: "gameOver") {
-//            gameOver.position = secondNode.position
             addChild(gameOver)
         }
     }
